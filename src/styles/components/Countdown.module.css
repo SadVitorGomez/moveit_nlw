@@ -59,7 +59,13 @@
 }
 
 .countdownButton p {
-  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdownButton p img {
+  margin-left: 0.8rem;
 }
 
 .countdownButton:not(:disabled):hover {
@@ -80,4 +86,5 @@
   background: var(--white);
   color: var(--text);
   cursor: not-allowed;
+  border-bottom: 4px solid var(--green);
 }
