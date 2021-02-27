@@ -35,12 +35,12 @@ export function ChallengesProvider({
   children,
   ...props
 }: ChallengesProviderProps) {
-  const [level, setLevel] = useState(props.level ?? 1);
+  const [level, setLevel] = useState(props.level);
   const [currentExperience, setCurrentExperience] = useState(
-    props.currentExperience ?? 0
+    props.currentExperience
   );
   const [challengesCompleted, setChallengesCompleted] = useState(
-    props.challengesCompleted ?? 0
+    props.challengesCompleted
   );
   const [activeChallenge, setActiveChallenge] = useState(null);
   const [isLevelModalOpen, setIsLevelModalOpen] = useState(false);
