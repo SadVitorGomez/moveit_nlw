@@ -6,7 +6,6 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.6rem;
-  grid-auto-columns: min-content;
 }
 
 .loginWrapper > img {
@@ -21,15 +20,43 @@
 
 .loginWrapper p {
   color: var(--text-highlight);
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
 }
 
-.githubButton {
+.loginWrapper:last-child p {
+  display: flex;
+  align-items: center;
+}
+
+.loginWrapper:last-child p img {
+  margin-right: 0.5rem;
+}
+
+.githubLoginContainer {
   width: 100%;
+  display: flex;
+}
+
+.githubLoginContainer input[type='text'] {
+  width: 100%;
+  padding: 1.4rem;
+  border: none;
+  outline: none;
+  background: linear-gradient(to right, var(--blue-dark), var(--blue));
+  color: var(--white);
+  border-radius: 4px 0 0 4px;
+}
+
+.githubLoginContainer input[type='text']::placeholder {
+  color: var(--text-highlight);
+}
+
+.loginButton {
   padding: 1.4rem;
 
   border: none;
   outline: none;
   font-size: 0;
   background-color: var(--blue-dark);
+  border-radius: 0 4px 4px 0;
 }

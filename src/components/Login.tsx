@@ -17,8 +17,11 @@ export function Login() {
       </div>
 
       <div>
+        <p>
+          <img src="icons/github.svg" alt="github" />
+          Faça login com seu GitHub para começar
+        </p>
         <GithubLogin />
-        <p>* Faça login com seu Github para começar</p>
       </div>
     </div>
   );

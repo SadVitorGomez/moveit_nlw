@@ -1,13 +1,12 @@
-import Link from 'next/link';
-
 import styles from '../styles/components/Login.module.css';
 
 export function GithubLogin() {
   return (
-    <Link href="/home">
-      <button className={styles.githubButton}>
-        <img src="icons/github.svg" alt="github" />
+    <div className={styles.githubLoginContainer}>
+      <input type="text" placeholder="Preencha com o seu username" />
+      <button className={styles.loginButton}>
+        <img src="icons/arrow-right.svg" alt="arrow right" />
       </button>
-    </Link>
+    </div>
   );
 }
